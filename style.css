@@ -110,7 +110,7 @@ nav ul li a:hover {
 
 .features {
   width: 100%;
-  height: 98vh;
+  height: auto;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -123,6 +123,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .feature-box {
@@ -161,7 +162,7 @@ nav ul li a:hover {
 
 .about {
   width: 100%;
-  height: 110vh;
+  height: auto;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -259,11 +260,9 @@ nav ul li a:hover {
   box-shadow: 20px 10px 10px rgb(255, 255, 255);
 }
 
-/* Media Queries */
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .main-heading {
-    width: 80%;
+    width: 400px;
     left: 10%;
     top: 40%;
     transform: translate(-10%, -40%);
@@ -276,48 +275,74 @@ nav ul li a:hover {
   .main-heading p {
     font-size: 18px;
   }
+
+  .feature-box {
+    width: 250px;
+    height: 400px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 50px 5%;
+  }
+
+  .about-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact form {
+    width: 90%;
+  }
 }
 
-@media (max-width: 480px) {
-  nav ul li a {
-    padding: 0 15px;
+@media screen and (max-width: 480px) {
+  .main {
+    height: 500px;
   }
 
   .main-heading {
-    width: 90%;
+    width: 300px;
     left: 5%;
-    top: 40%;
-    transform: translate(-5%, -40%);
+    top: 35%;
+    transform: translate(-5%, -35%);
   }
 
   .main-heading h1 {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .main-heading p {
     font-size: 16px;
   }
 
-  .features-container {
-    flex-wrap: wrap;
-  }
-
   .feature-box {
-    width: calc(50% - 20px);
+    width: 200px;
+    height: 350px;
+    margin: 10px;
   }
 
-  .about {
-    flex-direction: column;
-    align-items: center;
+  .about-text h2 {
+    font-size: 1.8rem;
   }
 
-  .about-img {
-    width: 70%;
-    margin-bottom: 50px;
+  .about-text p {
+    font-size: 1rem;
   }
 
-  .about-text {
-    width: 70%;
-    text-align: center;
+  .contact form input,
+  .contact form textarea {
+    height: 30px;
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .contact form textarea {
+    height: 100px;
   }
 }
