@@ -1,101 +1,98 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background-color: #ffff;
-}
-a
-{
+    background-color: #ffffff;
+  }
+  
+  a {
     text-decoration: none;
-}
-li
-{
+  }
+  
+  li {
     list-style: none;
-}
-input,button,textarea
-{
+  }
+  
+  input,
+  button,
+  textarea {
     border: none;
-    outline:none;
-
-}
-nav
-{
+    outline: none;
+  }
+  
+  nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    left: 0;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1;
-}
-nav ul
-{
+    background-color: cadetblue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+ 
+  
+  nav .menu {
     display: flex;
+  }
+  
+  nav .menu li {
+    margin: 0 40px;
+  }
+  
+  nav .menu li a {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+  }
 
-}
-nav ul li a
-{
-    height: 40px;
-    line-height: 43px;
-    margin: 3px;
-    padding: 0 45px;
-    display: flex;
-    font-size: 0.7rem;
-    text-transform:uppercase;
-    font-weight: 1000;
-    letter-spacing: 2px;
-    border-radius: 3px;
-    transition-timing-function: 0.6 ease-in-out;
-    color: #000000;
-}
-nav ul li a:hover{
-    background-color: #fc6f41;
-    color: #ffff;
-    box-shadow: 5px 10px 30px rgba(14, 63, 128, 0.397);
-
-}
-.active
-{
-    background-color: #fc6f41;
-    color: #ffff;
-    box-shadow: 10px 5px 5px rgba(128, 14, 14, 0.397);
-}
-
-.main
-{
+  
+  nav .menu li a:hover {
+    color: #fc6f41;
+  }
+  
+  .main {
     width: 100%;
     height: 800px;
-    position: realtive; 
+    position: relative;
     background-repeat: repeat;
     background-size: cover;
     background-image: url(10.jpg);
-}
-.main-heading
-{
+  }
+  
+  .main-heading {
     width: 500px;
     position: absolute;
     left: 16%;
     top: 47%;
     transform: translate(-16%, -47%);
-    
-}
-
-.main-heading h1
-{
+  }
+  
+  .main-heading h1 {
     font-size: 35px;
-    font-weight:bolder;
+    font-weight: bolder;
     margin: 0px;
     letter-spacing: 3px;
-    color: #ffff;
-}
-.main-heading p
-{
+    color: #ffffff;
+  }
+  
+  .main-heading p {
     font-size: 20px;
     color: #e2e2e2;
-}
-.main-btn
-{
+  }
+  
+  .main-btn {
     width: 120px;
     height: 40px;
     display: flex;
@@ -103,16 +100,15 @@ nav ul li a:hover{
     align-items: center;
     background-color: #fc6f41;
     border-radius: 10px;
-    color: #ffff;
+    color: #ffffff;
     transition: 0.6s ease-in-out;
-}
-.main-btn:hover
-{
-    box-shadow: 5px 10px 30px rgba(252,59,0,0.397);
-}
-
-.features
-{
+  }
+  
+  .main-btn:hover {
+    box-shadow: 5px 10px 30px rgba(252, 59, 0, 0.397);
+  }
+  
+  .features {
     width: 100%;
     height: 98vh;
     box-sizing: border-box;
@@ -121,58 +117,50 @@ nav ul li a:hover{
     align-items: center;
     flex-direction: column;
     margin-top: -100px;
-}
-
-.features-container
-{
+  }
+  
+  .features-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.feature-box
-{
-    background-color: #ffff;
+    flex-wrap: wrap;
+  }
+  
+  .feature-box {
+    background-color: #ffffff;
     width: 300px;
     height: 450px;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    box-shadow: 5px 10px 30px rgba(0,0,0,0.13);
-
-}
-
-.f-img
-{
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.13);
+  }
+  
+  .f-img {
     width: 100%;
     height: 63%;
-
-}
-.f-img img
-{
+  }
+  
+  .f-img img {
     width: 100%;
     height: 100%;
-}
-.f-text
-{
+  }
+  
+  .f-text {
     width: 100%;
     height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-}
-.f-text h4
-{
-
+  }
+  
+  .f-text h4 {
     margin-top: -40px;
-
-}
-
-.about
-{
+  }
+  
+  .about {
     width: 100%;
     height: 110vh;
     box-sizing: border-box;
@@ -181,102 +169,189 @@ nav ul li a:hover{
     justify-content: space-between;
     padding: 50px 5% 0px 5%;
     position: relative;
-
-}
-.about-img
-{
+  }
+  
+  .about-img {
     width: 50%;
-
-}
-.about-img img
-{
-
+  }
+  
+  .about-img img {
     width: 500px;
-
-}
-.about-text
-{
+    max-width: 100%;
+  }
+  
+  .about-text {
     width: 45%;
-    color: #000;
+    color: #000000;
     text-align: right;
-
-}
-.about-text h2
-{
+  }
+  
+  .about-text h2 {
     font-size: 2.2rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-.about-text p
-{
-    font-size:  1.1rem;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
     color: #4b4b44;
-}
-.about-text button
-{
+  }
+  
+  .about-text button {
     float: right;
-}
-    .contact
-    {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 0px;
-
-    }
-    .contact-heading
-    {
-        text-align: center;
-        margin: 40px 0px;
-        margin-bottom: 80px;
-
-    }
-    .contact-heading h1
-    {
-        font-size: 2.2rem;
-    }
-    .contact form
-    {
-        width: 600px;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-    }
-
-    .contact form input
-    {
-        border: 2px solid black;
-    }
-    .contact form textarea
-    {
-        border: 2px solid black;
-    }
-    .contact form input, .contact form textarea
-    {
-        width: 100%;
-        height: 40px;
-        margin: 5px 0px;
-        padding: 10px;
-        background-color: #e2e2e2;
-        color: #1e1e1e;
-        border-radius: 10px;
-    }
-
-    .contact form textarea
-    {
-        height: 150px;
-    }
-.about-us
-{
-    font-size: 1.2rem; 
+  }
+  
+  .contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+  }
+  
+  .contact-heading {
+    text-align: center;
+    margin: 40px 0px;
+    margin-bottom: 80px;
+  }
+  
+  .contact-heading h1 {
+    font-size: 2.2rem;
+  }
+  
+  form {
+    margin: 20px;
+    max-width: 400px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+ 
+  .contact-form button {
+    width: 120px;
+    height: 40px;
+    background-color: #fc6f41;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    box-shadow: 5px 10px 30px rgba(252, 59, 0, 0.397);
+  }
+  .menu-icon span {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin-bottom: 5px;
+    border-radius: 3px;
+  }
+  
+  
+  .about-us {
+    font-size: 1.2rem;
     font-weight: 900;
     color: white;
     box-shadow: 20px 10px 10px rgb(255, 255, 255);
+  }
+  .menu-toggle {
+    display: none;
+  }
+  
+  
+  @media (max-width: 768px) {
 
-}
+    .main .menu{
+        display: none;
+    }
+
+    .main-heading {
+        width:fit-content;
+        
+      }
+
+      .features{
+        display: block;
+      }
+
+      .features .feature-box
+      {
+        width: 350px;
+        height: 350px;
+
+        
+      }
+
+      .about{
+        width:400px;
+        height:fit-content;
+        margin-top: 500px;
+
+      }
+      .about p {
+        width: 150px;
+      }
+      .about h1{
+        width:10px;
+      }
+
+      .menu-toggle {
+        display: inline-block;
+        font-size: 30px;
+        margin-right: 100px;
+        cursor: pointer;
+        color:#ccc;
+      }
+
+      nav .menu {
+        display: none;
+      }
+    
+      nav .menu li {
+        margin: 0;
+      }
+    
+      nav .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+      }
+    
+      nav .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:cadetblue;
+        padding: 30px;
+        margin-top: -20px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+      }
+    
+      nav .menu.active li {
+        margin: 10px 0;
+      }
+      
+     
+      
+  }
