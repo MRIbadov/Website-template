@@ -317,4 +317,15 @@ nav ul li a:hover {
     .about-text {
         font-size: 1rem;
     }
+     .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .feature {
+    width: 100%;
+  }
 }
